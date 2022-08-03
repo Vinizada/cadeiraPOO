@@ -1,0 +1,218 @@
+package aula1;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class Exercicios {
+
+	static Scanner ler = new Scanner(System.in);
+	static Calculadora calculadora = new Calculadora();
+
+	public static void main(String[] args) {
+
+		/*
+		 * System.out.println("Meu nome é Vinícius Lima da Silva\n");
+		 * System.out.println("Email: vinislimadasilva17@gmail.com");
+		 * 
+		 * String nome = JOptionPane.showInputDialog("Digite seu nome: "); String idade
+		 * = JOptionPane.showInputDialog("Digite sua idade: ");
+		 * 
+		 * System.out.println("Seu nome é: " + nome + "\nIdade: " + idade);
+		 */
+
+		selecionaExercicio();
+
+	}
+
+	public static void selecionaExercicio() {
+
+		String exercicio = JOptionPane.showInputDialog("Selecione o exercício desejado: ");
+
+		if (exercicio.equals("2")) {
+
+			exercicio2();
+
+		} else if (exercicio.equals("4")) {
+
+			exercicio4();
+
+		} else if (exercicio.equals("5")) {
+
+			exercicio5();
+
+		} else if (exercicio.equals("6")) {
+
+			exercicio6();
+
+		} else if (exercicio.equals("7")) {
+
+			exercicio7();
+
+		} else if (exercicio.equals("8")) {
+
+			exercicio8();
+
+		} else if (exercicio.equals("9")) {
+
+			exercicio9();
+
+		}
+
+	}
+
+	public static Integer maiorValor(Integer valor1, Integer valor2) {
+
+		if (valor1 > valor2) {
+
+			return valor1;
+
+		} else {
+
+			return valor2;
+		}
+
+	}
+
+	public static void exercicio2() {
+
+		String areaAInput = JOptionPane.showInputDialog("Área A: ");
+		String areaBInput = JOptionPane.showInputDialog("Área B: ");
+
+		Integer areaA = Integer.parseInt(areaAInput);
+		Integer areaB = Integer.parseInt(areaBInput);
+
+		Integer resultado = areaA * areaB;
+
+		System.out.println("Resultado da equação: " + resultado);
+
+	}
+
+	public static void exercicio4() {
+
+		System.out.println("Digite o primeiro valor: ");
+
+		Integer valor1 = ler.nextInt();
+
+		System.out.println("Digite o segundo valor: ");
+
+		Integer valor2 = ler.nextInt();
+
+		System.out.println("Maior valor: " + maiorValor(valor1, valor2));
+
+	}
+
+	public static void exercicio5() {
+
+		Integer nota1;
+		Integer nota2;
+		Integer nota3;
+		Double media;
+
+		System.out.println("Digite a nota 1: ");
+
+		nota1 = ler.nextInt();
+
+		System.out.println("Digite a nota 2: ");
+
+		nota2 = ler.nextInt();
+
+		System.out.println("Digite a nota 3: ");
+
+		nota3 = ler.nextInt();
+
+		media = (double) ((nota1 + nota2 + nota3) / 3);
+
+		if (media >= 7.0) {
+
+			System.out.println("Aluno aprovado!");
+
+		} else if (media >= 5.0 && media < 7.0) {
+
+			System.out.println("Aluno em recuperação!");
+
+		} else {
+
+			System.out.println("Aluno reprovado!");
+		}
+
+	}
+
+	public static void exercicio6() {
+
+		Integer valor = 0;
+
+		while (valor < 100) {
+
+			valor++;
+			System.out.println(valor);
+
+		}
+
+	}
+
+	public static void exercicio7() {
+
+		Integer valor = 0;
+
+		while (valor < 100) {
+
+			valor++;
+
+			if (valor % 2 == 0) {
+
+				System.out.println(valor + " é um valor par");
+
+			} else {
+
+				System.out.println(valor + " é um valor ímpar");
+			}
+
+		}
+
+	}
+
+	public static void exercicio8() {
+
+		Double valorDigitado;
+
+		System.out.println("Digite um valor: ");
+
+		valorDigitado = ler.nextDouble();
+
+		System.out.println("Raiz quadrada de " + valorDigitado + " = " + Math.sqrt(valorDigitado));
+
+	}
+
+	public static void exercicio9() {
+
+		Integer operacao;
+		Integer valor1;
+		Integer valor2;
+
+		System.out.println("Selecione a operação: \n1 - Soma \n2 - Subtração \n3 - Divisão \n4 - Multiplicação");
+
+		operacao = ler.nextInt();
+
+		calculadora.setOperacao(operacao);
+
+		System.out.println("Insira o valor 1: ");
+
+		valor1 = ler.nextInt();
+
+		System.out.println("Insira o valor 2: ");
+
+		valor2 = ler.nextInt();
+
+		calculadora.selecionaOperacao(valor1, valor2);
+
+	}
+	
+	public static void exercicio10() {
+		
+		Banco banco = new Banco();
+		
+		banco.selecionaOperacao();
+	}
+
+}

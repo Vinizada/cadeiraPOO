@@ -1,0 +1,62 @@
+package aula1;
+
+import java.util.Scanner;
+
+public class Banco {
+
+	Integer operacao;
+
+	public Banco() {
+
+	}
+
+	public void cadastrar() {
+
+	}
+
+	public void emprestimo() {
+
+	}
+
+	public void listar() {
+
+	}
+
+	public void selecionaOperacao() {
+
+		do {
+			
+			Scanner menu = new Scanner (System.in);
+
+	        System.out.print("##--Bem vindo ao Banco--##\n\n");
+	        System.out.print("|-----------------------------|\n");
+	        System.out.print("| Opção 1 - Novo Cadastro     |\n");
+	        System.out.print("| Opção 2 - Empréstimos       |\n");
+	        System.out.print("| Opção 3 - Listar            |\n");
+	        System.out.print("| Opção 4 - Sair              |\n");
+	        System.out.print("|-----------------------------|\n");
+	        System.out.print("Digite uma opção: ");
+
+	        operacao = menu.nextInt();
+	        
+	        if(operacao == 1) {
+	        	
+	        	cadastrar();
+	        	
+	        	
+	        }else if(operacao == 2) {
+	        	
+	        	emprestimo();
+	        	
+	        }else {
+	        	
+	        	listar();
+	        	
+	        }
+			
+			
+		} while (operacao != 0);
+
+	}
+
+}

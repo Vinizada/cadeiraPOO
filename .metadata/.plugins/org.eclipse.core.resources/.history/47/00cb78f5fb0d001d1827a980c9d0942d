@@ -1,0 +1,12 @@
+package aula1;
+
+public class exercicios {
+
+	public static void main(String[] args) {
+		 
+		System.out.println("Meu nome é Vinícius Lima da Silva\n");
+		System.out.println("Email: vinislimadasilva17@gmail.com");
+
+	}
+
+}

@@ -1,0 +1,47 @@
+package aula1;
+
+public class Banco {
+
+	Integer operacao;
+
+	public Banco() {
+
+	}
+
+	public void cadastrar() {
+
+	}
+
+	public void emprestimo() {
+
+	}
+
+	public void listar() {
+
+	}
+
+	public void sair() {
+
+	}
+
+	public void selecionaOperacao() {
+
+		do {
+			
+		}while (operacao != 0) {
+			
+			
+
+			if (this.operacao == 1) {
+
+			} else if (this.operacao == 2) {
+
+			} else {
+
+			}
+
+		}
+
+	}
+
+}

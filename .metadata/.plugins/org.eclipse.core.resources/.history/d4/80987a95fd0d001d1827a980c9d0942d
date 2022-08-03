@@ -1,0 +1,22 @@
+package aula1;
+
+import javax.swing.JOptionPane;
+
+public class exercicios {
+
+	public static void main(String[] args) {
+		 
+		System.out.println("Meu nome é Vinícius Lima da Silva\n");
+		System.out.println("Email: vinislimadasilva17@gmail.com");
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome: ");
+		String idade = JOptionPane.showInputDialog("Digite sua idade: ");
+		
+		System.out.println("Seu nome é: " + nome + "\nIdade: " + idade);
+		
+		String areaA = JOptionPane.showInputDialog("Área A: ");
+		String areaB = JOptionPane.showInputDialog("Área B: ");
+
+	}
+
+}

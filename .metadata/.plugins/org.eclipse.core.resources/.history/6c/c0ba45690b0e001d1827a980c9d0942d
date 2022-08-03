@@ -1,0 +1,74 @@
+package aula1;
+
+public class Cliente {
+
+	String nome;
+
+	Double salario;
+
+	Double emprestimo;
+
+	public Cliente(String nome, Double salario, Double emprestimo) {
+
+		this.nome = nome;
+		this.salario = salario;
+		this.emprestimo = emprestimo;
+
+	}
+
+	public Cliente() {
+
+	}
+
+	public boolean validaSalario(Double salario) {
+
+		if (salario <= 0.0) {
+
+			System.out.println("Salário não pode ser menor que 0!");
+
+			return false;
+			
+		} else {
+			
+			return true;
+		}
+
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(Double salario) {
+
+		if (validaSalario(salario)) {
+
+			this.salario = salario;
+			
+		}
+
+	}
+
+	public Double getEmprestimo() {
+		return emprestimo;
+	}
+
+	public void setEmprestimo(Double emprestimo) {
+		this.emprestimo = emprestimo;
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [nome=" + nome + ", salario=" + salario + ", emprestimo=" + emprestimo + "]";
+	}
+	
+	
+}

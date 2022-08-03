@@ -1,0 +1,41 @@
+package aula1;
+
+public class Calculadora {
+
+	String operacao;
+
+	public Calculadora() {
+
+	}
+
+	public void soma(Integer valor1, Integer valor2) {
+			
+		System.out.println("Soma de " + valor1 + " e " + valor2 + " = " + valor1 + valor2);
+
+	}
+
+	public void divisao(Integer valor1, Integer valor2) {
+		
+		if(valor2 <= 0) {
+			
+			System.out.println("Não é possível dividir por 0");
+		
+		} else {
+			
+			System.out.println("Divisão de " + valor1 + " e " + valor2 + " = " + valor1 / valor2);
+		}
+	}
+
+	public void subtracao(Integer valor1, Integer valor2) {
+		
+		System.out.println("Subtração de " + valor1 + " e " + valor2 + " = " +( valor1 - valor2));
+
+	}
+
+	public void multiplicacao(Integer valor1, Integer valor2) {
+		
+		System.out.println("Soma de " + valor1 + " e " + valor2 + " = " + valor1 + valor2);
+
+	}
+
+}

@@ -1,0 +1,50 @@
+package aula1;
+
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
+public class exercicios {
+
+	public static void main(String[] args) {
+		
+		Scanner ler = new Scanner(System.in);
+		 
+		/*System.out.println("Meu nome é Vinícius Lima da Silva\n");
+		System.out.println("Email: vinislimadasilva17@gmail.com");
+		
+		String nome = JOptionPane.showInputDialog("Digite seu nome: ");
+		String idade = JOptionPane.showInputDialog("Digite sua idade: ");
+		
+		System.out.println("Seu nome é: " + nome + "\nIdade: " + idade);
+		
+		String areaAInput = JOptionPane.showInputDialog("Área A: ");
+		String areaBInput = JOptionPane.showInputDialog("Área B: ");
+		
+		Integer areaA = Integer.parseInt(areaAInput);
+		Integer areaB = Integer.parseInt(areaBInput);
+		
+		Integer resultado = areaA * areaB;
+		
+		System.out.println("Resultado da equação: " + resultado);*/
+		
+		System.out.println("Digite o primeiro valor: ");
+		
+		Integer valor1 = ler.nextInt();
+		
+		System.out.println("Digite o segundo valor: ");
+		
+		Integer valor2 = ler.nextInt();
+		
+		if(valor1 > valor2) {
+			
+			System.out.println("Maior valor: " + valor1);
+			
+		} else {
+			
+			System.out.println("Maior valor: " + valor2);
+		}
+
+	}
+
+}
